@@ -1,6 +1,5 @@
-# meta-application
-YOCTO meta-application template
+# Kiosk Display Application for Raspberry Pi
 
-This repository is a starting point for building a Yocto-based application or meta-layer for embedded Linux systems. It provides a simple project structure for organizing recipe metadata, source code, and configuration needed to build custom software into a target image.
+A Yocto-based embedded Linux application designed to run on a display in kiosk mode. The project includes a custom OpenEmbedded layer for building tailored Raspberry Pi images, with separate debug and production configurations. It also provides Wi-Fi connectivity through WPA Supplicant and systemd-networkd, along with additional package recipes. The production image uses a read-only root filesystem, while the debug image includes development and remote-access tools.
 
-The main goal is to accelerate development by giving a reusable template for packaging, integrating, and deploying application logic within a Yocto/OpenEmbedded workflow.
+**Technologies**: Yocto Project, OpenEmbedded, BitBake, Linux, Raspberry Pi, systemd, wayland
